@@ -1,0 +1,119 @@
+#root .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+}
+
+#root .container * {
+  box-sizing: border-box;
+}
+
+#root .flex-outer,
+#root .flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+#root .flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#root .flex-outer li,
+#root .flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#root .flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+#root .flex-outer > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#root .flex-outer li label {
+  padding: 8px;
+  font-size: 12px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+#root .flex-outer > li > label {
+  flex: 1 0 20px;
+  /* max-width: 1200px; */
+}
+
+#root .flex-outer > li > label + *,
+#root .flex-inner {
+  flex: 1 0 220px;
+}
+
+#root .flex-outer > li .flex-full-width {
+  flex: 0 0 100%;
+}
+
+#root .flex-outer li p {
+  margin: 0;
+}
+
+#root .flex-outer li input:not([type='checkbox']),
+#root .flex-outer li textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#root .flex-outer li button.modal-btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+#root .flex-inner li {
+  width: 100px;
+}
+
+#root .trumbowyg-box,
+#root .trumbowyg-editor, 
+#root .trumbowyg-textarea {
+  margin: 0;
+  min-height: 200px;
+}
+
+#root .trumbowyg-button-pane button {
+  /* margin: 0; */
+  width: 25px;
+  height: 35px;  
+}
+
+#root .trumbowyg-editor {
+  padding: 10px;
+}
+
+.trumbowyg-modal-box .trumbowyg-modal-button {
+  min-width: auto;
+  padding: 0;
+}
+
+#root .trumbowyg-fullscreen {
+  top: 45px;
+}
+
+#root .required {
+  font-size: 16px;
+  color: #ff0000;
+  vertical-align: sub;
+}
+
+#edit-question {
+  display: none;
+}
